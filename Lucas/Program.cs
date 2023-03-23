@@ -22,7 +22,6 @@ namespace Lucas
             int Input = Lucas(UserInput);
 
             Console.WriteLine(Input);
-            Console.WriteLine("hello");
         }
     }
 }
