@@ -7,12 +7,11 @@ namespace Power2Method
         //method for shift 1 five times
         private static void PowersOf2Until5()
         {
-            for(int i = 1; i <= (1 << 5); i = i << 1)
-            {
-            Console.WriteLine(i);
-            }
+            //changed method to use PowersOf2UntilN()
+            PowersOf2UntilN(5);
         }
 
+        //method for shift 1 n times
         private static void PowersOf2UntilN(int n)
         {
             for (int i = 1; i <= ( 1 << n ); i = i << 1)
