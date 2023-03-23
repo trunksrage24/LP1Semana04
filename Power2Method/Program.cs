@@ -6,7 +6,7 @@ namespace Power2Method
     {
         private static void PowersOf2Until5()
         {
-            for(int i = 1; i <= (1 << 5); i << 1)
+            for(int i = 1; i <= (1 << 5); i = i << 1)
             {
             Console.WriteLine(i);
             }
@@ -14,7 +14,8 @@ namespace Power2Method
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            PowersOf2Until5();
+            PowersOf2Until5();
         }
     }
 }
