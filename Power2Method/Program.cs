@@ -27,6 +27,14 @@ namespace Power2Method
             }
         }
 
+        private static void PowersOf2UntilN(int n1, int n2)
+        {
+            for (int i = (1 << n1); i <= (1 << n2); i = i << 1)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
         //main method
         /// <summary>
         /// main method
@@ -36,8 +44,12 @@ namespace Power2Method
         {
             PowersOf2Until5();
             PowersOf2Until5();
+
             PowersOf2UntilN(4);
             PowersOf2UntilN(6);
+
+            PowersOf2UntilN(4 ,6);
+            PowersOf2UntilN(3, 7);
         }
     }
 }
